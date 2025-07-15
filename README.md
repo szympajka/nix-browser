@@ -20,7 +20,7 @@ Add this flake as an input to your `flake.nix`:
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
-    default-browser.url = "github:szympajka/default-browser-nix";
+    default-browser.url = "github:szympajka/nix-browser";
   };
 
   outputs = { self, nixpkgs, nix-darwin, default-browser, ... }: {
@@ -80,9 +80,7 @@ Common browser identifiers:
 
 ## Requirements
 
-- macOS
 - nix-darwin
-- Nix with flake support
 
 ## License
 
